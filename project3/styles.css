@@ -1,0 +1,164 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+nav{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:20px 8%;
+    background-color: black;
+    color: white;
+}
+nav .logo{
+    font-size:32px;
+    font-weight: 600;
+    cursor: pointer;
+}
+nav ul li{
+    list-style: none;
+    display: inline-block;
+}
+nav ul li a{
+    display:block;
+    margin:0 10px;
+    color:white;
+    font-weight:500 ;
+    text-decoration: none;
+    font-size: 17px;
+    position: relative;
+}
+nav ul li a::before{
+    content:'';
+    position: absolute;
+    bottom:0;
+    left:0;
+    background-color:white;
+    width:0;
+    height:3px;
+    transition: all 0.3s ease;
+}
+nav ul li a:hover::before{
+    width:100%;
+}
+nav ul i{
+    font-size: 20px;
+    margin-left:10px;
+    cursor:pointer;
+}
+.heading{
+    display: flex;
+    justify-content: center;
+    background-color:rgb(239,239,239);
+    width: 100%;
+    height: 100%;
+}
+h2{
+    font-size: 80px;
+    color:rgb(118,14,37);
+}
+h3{
+    font-size: 50px;
+    color:orange;
+}
+p{
+    font-size: 18px;
+}
+
+.price{
+    display: flex;
+    align-items: center;
+}
+strong{
+    font-size: 50px;
+}
+.actual-price{
+    text-decoration: line-through;
+    color:darkblue;
+    margin-left: 20px;
+}
+h4{
+    font-family: sans-serif;
+}
+.btn-box{
+    display: flex;
+    margin-top: 40px;
+}
+.btn-box button{
+    font-size: 18px;
+    padding: 8px 25px;
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    color: white;
+}
+.cart-btn{
+ background-color:orangered;
+    margin-right: 20px;
+}
+.buy-btn{
+    background-color: #00aeff;
+    color:white;
+}
+.cart-btn:hover{
+    background-color:red;
+}
+.buy-btn:hover{
+    background-color: #0066ff;
+}
+.details{
+    display:flex;
+    flex-direction: row;
+}
+.right-side{
+    margin-left: 30px;
+    ul{
+        list-style: none;
+    }
+}
+.left-side{
+    font-weight: bold;
+
+}
+
+.left-content{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+    p{
+       font-family: "Century Gothic";
+        font-weight: bold;
+    }
+}
+
+.right-content{
+    width: 550px;
+    height: 550px;
+    position: relative;
+    display: flex;
+    justify-content: right;
+    margin-top: 50px;
+    flex-direction: column;
+}
+
+.right-content img{
+    position: relative;
+    right:-65px;
+    border-radius: 0px 70px 0px 0px;
+}
+.copy-right{
+    width:100%;
+    height:50px;
+    text-align: center;
+    color:white;
+    background-color: black;
+    padding:20px;
+}
+.small-images{
+    display: flex;
+    flex-direction: row;
+    gap:30px;
+}
